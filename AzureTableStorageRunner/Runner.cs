@@ -75,7 +75,7 @@ namespace AzureTableStorageRunner
                 }
 
                 watch.Stop();
-                Console.WriteLine($"Test:{index + 1} StartTime: {DateTime.UtcNow:g} Passed:{passed} Errors:{errors} Duration:{watch.ElapsedMilliseconds / 60.0:F}");
+                Console.WriteLine($"Test:{index + 1} StartTime: {DateTime.UtcNow:g} Passed:{passed} Errors:{errors} Duration:{watch.ElapsedMilliseconds / 1000.0:F}");
             });
 
             Console.WriteLine("Completed");
